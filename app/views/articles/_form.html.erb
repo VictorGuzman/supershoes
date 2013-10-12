@@ -32,8 +32,9 @@
     <%= f.number_field :total_in_vault %>
   </div>
   <div class="field">
-    <%= f.label :store_id %><br>
-    <%= f.text_field :store_id %>
+    <% stores_array = Store.all.map { |st| [st.name, st.id] } %>
+    <%= f.label :store_id, 'Select store' %><br>
+    <%= f.select :store_id, stores_array %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -1,8 +1,8 @@
 Supershoes::Application.routes.draw do
+  get "static_pages/home"
+  get "static_pages/help"
   resources :articles
-
   resources :stores
-
   get 'services/stores'
   get 'services/articles'
   get 'services/articles/stores/:st_id' => 'services#stores',  :as => :services_articles_by_store
@@ -11,7 +11,7 @@ Supershoes::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'static_pages#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -3,6 +3,10 @@ Supershoes::Application.routes.draw do
 
   resources :stores
 
+  get 'services/stores'
+  get 'services/articles'
+  get 'services/articles/stores/:st_id' => 'services#stores',  :as => :services_articles_by_store
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

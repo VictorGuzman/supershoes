@@ -1,4 +1,4 @@
-# Ruby on Rails Excercise: supershoes
+# Ruby on Rails Exercise: supershoes
 
 This is an excercise application in
 Ruby n Rails

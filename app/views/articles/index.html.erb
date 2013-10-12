@@ -24,7 +24,7 @@
         <td><%= article.price %></td>
         <td><%= article.total_in_shelf %></td>
         <td><%= article.total_in_vault %></td>
-        <td><%= article.store_id %></td>
+        <td><%= getStoreName(article.store_id) %></td>
         <td>
           <%= link_to 'Show', article, class: 'btn-small btn-info' %>
           <%= link_to 'Edit', edit_article_path(article), class: 'btn-small btn-info' %>

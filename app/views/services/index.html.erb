@@ -1,0 +1,40 @@
+<% provide(:title, 'Services') %>
+<div>
+	<h1>Services</h1>
+	<p>
+		Supershoes provides a plataform to interact with a future Android version of this application. There are three main JSON-based RESTful services that Supershoes provides right now. Here you will find how to verify that the JSON responses for every request are correct.
+	</p>
+
+	<h4>List all stores</h4>
+		<p>To verify the JSON response for this request type in your browser's navigation bar:</p>
+		<div class="center">
+			<code>http://supershoes.herokuapp.com/services/stores</code>
+		</div>
+		<p>If you are in a local environment you should type:</p>
+		<div class="center">
+			<code>http://localhost:3000/services/stores</code>
+		</div>
+		<br/>
+
+	<h4>List all articles</h4>
+		<p>To verify the JSON response for this request type in your browser's navigation bar:</p>
+		<div class="center">
+			<code>http://supershoes.herokuapp.com/services/articles</code>
+		</div>
+		<p>If you are in a local environment you should type:</p>
+		<div class="center">
+			<code>http://localhost:3000/services/articles</code>
+		</div>
+		<br/>
+
+	<h4>List all the articles that are in a specific store</h4>
+		<p>To verify the JSON response for this request type in your browser's navigation bar:</p>
+		<div class="center">
+			<code>http://supershoes.herokuapp.com/services/articles/stores/:id</code>
+		</div>
+		<p>If you are in a local environment you should type:</p>
+		<div class="center">
+			<code>http://localhost:3000/services/articles/stores/:id</code>
+		</div>
+		<p>You should replace <code>:id</code> with a store ID.</p>
+</div>

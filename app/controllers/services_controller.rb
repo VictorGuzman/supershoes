@@ -1,4 +1,9 @@
 class ServicesController < ApplicationController
+
+	# GET /services
+	def index
+	end
+
 	def stores
 		if params[:st_id]
 			@st_id = params[:st_id]

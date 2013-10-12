@@ -1,17 +1,18 @@
 Supershoes::Application.routes.draw do
   get "static_pages/home"
   get "static_pages/help"
+  get 'help'                            => 'static_pages#help',   :as => :help
   resources :articles
   resources :stores
   get 'services/stores'
   get 'services/articles'
-  get 'services/articles/stores/:st_id' => 'services#stores',  :as => :services_articles_by_store
+  get 'services/articles/stores/:st_id' => 'services#stores',     :as => :services_articles_by_store
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#home'
+  root 'static_pages#home',                                       :as => :home
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

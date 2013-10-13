@@ -15,3 +15,11 @@ A deployed version of this project is available [here](http://supershoes.herokua
 
 
 * The deployed version already has test data loaded.
+
+Finally, simply start the rails server:
+
+	$ rails server
+
+And launch the application by typing the following in your browser's navigation bar:
+
+	localhost:3000

@@ -6,7 +6,7 @@ Ruby on Rails by [Victor Guzman](http://github.com/VictorGuzman).
 A deployed version of this project is available [here](http://supershoes.herokuapp.com) using [Heroku](https://www.heroku.com/). If you want to try it in your local environment then follow these steps:
 
     $ cd /tmp
-	$ git clone git@github.com:VictorGuzman/supershoes.git
+	$ git clone https://github.com/VictorGuzman/supershoes.git
 	$ cd /tmp/supershoes
 	$ cp config/database.yml.example config/database.yml
 	$ bundle install --without production
